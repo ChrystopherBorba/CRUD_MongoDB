@@ -1,0 +1,43 @@
+<div class="card">
+    <div class="card-body">
+        <h2>Update</h2><br>
+
+        <form action="/update" method="POST">
+            {{#each dados3}}
+            <input type="hidden" name="id" value="{{_id}}">
+            <div class="mb-3">
+                <label class="form-label">Nome:</label>
+                <input class="form-control" type="text" name="nome" value="{{nome}}">
+            </div>
+            <div class="mb-3">
+                <label class="form-label">Email:</label>
+                <input class="form-control" type="text" name="email" value="{{email}}">
+            </div>
+            <div class="mb-3">
+                <label class="form-label">Nascimento:</label>
+                <input class="form-control" type="text" name="nascimento" value="{{nascimento}}">
+            </div>
+            <div class="mb-3">
+                <label class="form-label">Cidade:</label>
+                <input class="form-control" type="text" name="cidade" value="{{cidade}}">
+            </div>
+            <div class="mb-3">
+                <label class="form-label">Estado:</label>
+                <input class="form-control" type="text" name="estado" value="{{estado}}">
+            </div>
+            <div class="mb-3">
+                <label class="form-label">País:</label>
+                <input class="form-control" type="text" name="pais" value="{{pais}}">
+            </div>
+            <div class="mb-3">
+                <label class="form-label">Telefone:</label>
+                <input class="form-control" type="text" name="telefone" value="{{telefone}}">
+            </div>
+            {{/each}}
+            <div class="d-grid gap-2">
+                <button type="submit" class="btn btn-primary">Update</button>
+            </div>
+        </form>
+
+    </div>
+</div>
